@@ -1,0 +1,30 @@
+/* Your existing styles here */
+
+/* Style the menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  z-index: 99;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 0;
+}
+/* Your existing styles here */
+
+/* Add this new class for the shifted content */
+.shift-content {
+  transform: translateX(250px);
+}

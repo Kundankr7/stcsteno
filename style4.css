@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0e0f;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #ffcc00;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-title {
+  color: #4285f4;
+}
+
+.course-details {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.course-details li {
+  color: #333;
+}
+
+.practice-heading {
+  text-align: center;
+  margin-top: 40px;
+  color: #e74c3c;
+
+  
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a4f7a4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #0e0e0e;
+}
+
+ol {
+  padding-left: 40px;
+  font-size: 25px;
+  color: #080808;
+  margin-top: 10px;
+}
+
+ol li {
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #222;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.table-container {
+  display: table;
+  border-collapse: collapse;
+  width: 700px;
+  margin: auto;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.column1 {
+  background-color: #ffcc00;
+}
+
+.column2 {
+  background-color: #66cc66;
+}
+
+.row:nth-child(1) {
+  background-color: #ff6666;
+}
+
+.row:nth-child(2) {
+  background-color: #66a3ff;
+}
+
+.row:nth-child(3) {
+  background-color: #ff9933;
+}
+
+.row:nth-child(4) {
+  background-color: #33cccc;
+}
+
+.row:nth-child(5) {
+  background-color: #cc66cc;
+}
+
+.row:nth-child(6) {
+  background<div class="table-container">
+  <div class="row">
+    <div class="cell column1">Row 1, Column 1</div>
+    <div class="cell column2">Row 1, Column 2</div>
+  </div>
+  <div class="row">
+    <div class="cell column1">Row 2, Column 1</div>
+    <div class="cell column2">Row 2, Column 2</div>
+  </div>
+  <div class="row">
+    <div class="cell column1">Row 3, Column 1</div>
+    <div class="cell column2">Row 3, Column 2</div>
+  </div>
+  <div class="row">
+    <div class="cell column1">Row 4, Column 1</div>
+    <div class="cell column2">Row 4, Column 2</div>
+  </div>
+  <div class="row">
+    <div class="cell column1">Row 5, Column 1</div>
+    <div class="cell column2">Row 5, Column 2</div>
+  </div>
+  <div class="row">
+    <div class="cell column1">Row 6, Column 1</div>
+    <div class="cell column2">Row 6, Column 2</div>
+  </div>
+  <div class="row">
+    <div class="cell column1">Row 7, Column 1</div>
+    <div class="cell column2">Row 7, Column 2</div>
+  </div>
+</div>-color: #99cc66;
+}
+
+.row:nth-child(7) {
+  background-color: #6666ff;
+}
+
+.colorful-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  background-color: #27c190;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.inner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}

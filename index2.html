@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body {
+      background-color: #a4f6f2;
+    }
+    section {
+      background-color: rgb(98, 177, 195);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex; /* Added */
+    }
+    .image-container {
+      flex: 0 0 40%; /* Adjust the width of the image container */
+      padding-right: 20px;
+    }
+    .text-container {
+      flex: 1; /* Takes up remaining space */
+    }
+    h2 {
+      color: #333;
+      font-size: 36px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #666;
+      visibility: visible;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="image-container">
+      <img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2FIMG-20230831-WA0022.jpg?alt=media&token=4cb55c9a-218d-4d21-ad43-c643ce0b82b2"alt="Profile Picture">
+    </div>
+    <div class="text-container">
+      <h2>About Me</h2>
+      <p id="about-me-text"></p>
+    </div>
+  </section>
+  <script>
+    const textElement = document.querySelector('#about-me-text');
+    const words = " Hello! My name is Ak Sharma, and I'm thrilled to share that I've been selected as a stenographer at Indira Gandhi University (IGU). With a passion for effective communication and organization, I'm excited to contribute my skills to this dynamic institution. I believe in the power of precision and attention to detail, which makes stenography a perfect fit for me. In my free time, you can find me honing my stenography skills, exploring new literature, and enjoying the company of friends and family. I'm eager to embark on this journey at IGU and make a positive impact through my role as a stenographer. If you'd like to connect or have any questions, feel free to reach out to me at Stcstenonnl@gmail.com.</p> ".split(' ');
+    textElement.textContent = '';
+    let i = 0;
+    function printNextWord() {
+      if (i < words.length) {
+        textElement.innerHTML += words[i] + ' ';
+        i++;
+        setTimeout(printNextWord, 200); // adjust delay time here
+      }
+    }
+    printNextWord();
+  </script>
+</body>
+</html>

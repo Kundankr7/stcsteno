@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Website in HTML CSS</title>
+    <link rel="stylesheet" href="style11.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">Steno.</a></h2>
+
+          <ul class="menu_items">
+            <img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2Fpng-transparent-hamburger-button-computer-icons-menu-bar-line-thumbnail.png?alt=media&token=a61a3184-5c56-4c48-bdf2-e7cfd3e6eb8f" alt="timesicon" id="menu_toggle" />
+            <li><a href="index.html" class="nav_link">Home</a></li>
+            <li><a href="index2.html" class="nav_link">About</a></li>
+            <li><a href="index6.html" class="nav_link">Service</a></li>
+            <li><a href="index03.html" class="nav_link">course</a></li>
+            <li><a href="index1.html" class="nav_link">features</a></li>
+            <li><a href="index5.html" class="nav_link">Contact</a></li>
+          </ul>
+          <img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2Fpng-transparent-hamburger-button-computer-icons-menu-bar-line-thumbnail.png?alt=media&token=a61a3184-5c56-4c48-bdf2-e7cfd3e6eb8f" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Sharma Type & <br> Steno Institute Narnaul</h2>
+            <p>This is only Institute for the bright future of thousand student engaged in your service since 1995!</p>
+            <div class="buttons">
+              <button class="btn">Read More</button>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+          <div class="column">
+            <img src="https://firebasestorage.googleapis.com/v0/b/adityaagiridih.appspot.com/o/Kundan%2FIMG-20230831-WA0017.jpg?alt=media&token=886b4ad9-544c-47f8-bd2c-8b8a9940891e" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+        <marquee behavior="scroll" direction="left" scrollamount="-2">
+          NEW BATCH STARTED SOON.
+        </marquee>
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
